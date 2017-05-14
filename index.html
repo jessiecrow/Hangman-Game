@@ -5,21 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Play Hangman!</title>
 			<!-- Link Stylesheets and Bootstrap -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body>
 			<!-- Main Body Content -->
-		<div class="wrapper">
-			<div class="container">
-				
+		<div class="panel panel-default">
+			<div class="panel-body text-center">
+				<h1>Hangman</h1><br><br>
+				<div class="panel-body text-left">
+					<Container=left justified>
+						<h3 id="word-blank"></h3>
+						<p>Guesses Remaining: <span id="guesses-left"></span></p>
+						<p>Incorrect Guesses: <span id="guesses-wrong"></span></p>
+						<p>Player Wins: <span id="win-counter"></span></p>
+						<p>Playr Loses: <span id="loss-counter"></span></p>
+				</div>
 			</div>
-		</div>
-
-
 			<!-- Link Javascipt file -->
-		<script type="text/javascript" src="assets/javascript/game.js"></script>
-
+		<script type="text/javascript" src="assets/javascript/gamefk.js"></script>
+		</div>
 	</body>
 </html>
+
+

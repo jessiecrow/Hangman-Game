@@ -1,0 +1,9 @@
+.panel {
+	max-width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 300px;
+}
+h1 {
+	font-family: Roboto;
+}

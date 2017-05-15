@@ -1,9 +1,18 @@
+body {
+	background-image: url(../images/ow_tracer_bg.jpg)
+}
+.banner {
+	float: right;
+}
 .panel {
 	max-width: 400px; 
 	margin-left: auto; 
 	margin-right: auto; 
-	margin-top: 300px;
+	margin-top: 75px;
 }
 h1 {
 	font-family: Roboto;
+}
+.panel-body {
+	border-radius: 5px;
 }

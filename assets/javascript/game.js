@@ -73,5 +73,4 @@ function play() {
 			remaining_guesses = 10;
 		}
 		document.getElementById("blank").innerHTML = blank.join(" ");
-// document.getElementById("instruction").innerHTML = message;
 		}

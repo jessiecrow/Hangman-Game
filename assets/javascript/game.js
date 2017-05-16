@@ -24,6 +24,7 @@ function setBoard(){
 	// document.getElementById("guesses-wrong").innerHTML = "Wrong Letters: " + 
 	// document.getElementById("win-counter").innerHTML = 
 	// document.getElementById("loss-counter").innerHTML = 
+	// document.getElementById("start").style.visibility = "hidden";
 }
 document.getElementById("start").onclick = function() {
 	randomHero();
@@ -31,7 +32,7 @@ document.getElementById("start").onclick = function() {
 	setBoard();
 	console.log(hero);
 };
-document.onkeyup = function(event) {
+document.onkeyup = function(e) {
 	play();
 };
 function play() {
@@ -43,13 +44,12 @@ function play() {
 	}
 		else {
 			var i=0;
-			for (i=0; i < hero.length; i++) {
+			for (i = 0; i < hero.length; i++) {
 				if (hero[i] === userGuesses) {
 					blank[i] = userGuesses;
 					message = "Nice! " + "Thats one letter down! " + userGuesses;
 				}
 			}
-		}
 		lettersLeft = blank.length;
 		for (i = 0; i < blank.length; i++) {
 			if (blank[i] !== '_') {
@@ -62,11 +62,16 @@ function play() {
 		}
 		if (lettersLeft === 0) {
 			message = "You guessed " + hero + ".";
-			// document.getElementById("btn-name").innerHTML = "Play Again";
+			document.getElementById("btn-name").innerHTML = "Play Again";
+			document.getElementById("start").style.visibility = "visable";
+			remaining_guesses = 10;
 		}
 		if (guessesLeft === 0) {
 			message = "Defeat";
-			// document.getElementById("btn-name").innerHTML = "Play Again";
+			document.getElementById("btn-name").innerHTML = "Play Again";
+			document.getElementById("start").style.visibility = "visable";
+			remaining_guesses = 10;
 		}
 		document.getElementById("blank").innerHTML = blank.join(" ");
 // document.getElementById("instruction").innerHTML = message;
+		}

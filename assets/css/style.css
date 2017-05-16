@@ -16,3 +16,10 @@ h1 {
 .panel-body {
 	border-radius: 5px;
 }
+.blank {
+	font-family: 'Pacifico', cursive;
+	margin-top: 50px;
+	font-size: 72px;
+	font-weight: bold;
+	color: #511c33;
+}
